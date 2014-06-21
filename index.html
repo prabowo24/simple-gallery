@@ -1,0 +1,31 @@
+<script src="komponen/js-style/jquery.js"></script>
+<script src="komponen/js-style/gallery.js"></script>
+
+<div class="penampil-gambar">
+	<a href='#' data-title="Ini Judul untuk gambar 1">
+		<img src='komponen/images/1.jpg'>
+	</a>
+	<a href='#' data-title="Ini judul untuk gambar 2">
+		<img src='komponen/images/2.jpg'>
+	</a>
+	<a href='#' data-title="Ini judul untuk gambar 3">
+		<img src='komponen/images/3.jpg'>
+	</a>
+	<a href='#' data-title="Ini judul untuk gambar 4">
+		<img src='komponen/images/4.jpg'>
+	</a>
+</div>	
+
+<script>
+	$(function(){
+		$(".penampil-gambar").rataGambar({
+			column:4,
+			height:200,
+			margin:0
+		});
+		//you can using 2 parameter like 'column' and 'height'
+		//column default is 4
+		//height default is 300
+		//margin default is 0
+	});
+</script>
